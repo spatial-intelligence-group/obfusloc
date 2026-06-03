@@ -13,15 +13,18 @@ CUDA_HOME=<cuda-path> PATH=<cuda-path>/bin:$PATH \
 
 Based on your CUDA version, you can pick the correct package version from the table:
 
-| CUDA | Min driver (Linux) | `<torch>` | `<torchvision>` | `<xformers>` | `<cu>` | `<cuda-path>` |
+| CUDA | `<torch>` | `<torchvision>` | `<xformers>` | `<cu>` | `<cuda-path>` |
 |------|--------------------|-----------|-----------------|--------------|--------|---------------|
-| 13.0 | 570 | `torch==2.9.0` | `torchvision==0.24.0` | `xformers==0.0.33` | `cu130` | `/usr/local/cuda-13.0` |
-| 12.4 | 550 | `torch==2.6.0` | `torchvision==0.21.0` | `xformers==0.0.29.post3` | `cu124` | `/usr/local/cuda-12.4` |
-| 11.8 | 450 | `torch==2.6.0` | `torchvision==0.21.0` | `xformers==0.0.29.post3` | `cu118` | `/usr/local/cuda-11.8` |
+| 13.0 | `torch==2.9.0` | `torchvision==0.24.0` | `xformers==0.0.33` | `cu130` | `/usr/local/cuda-13.0` |
+| 12.4 | `torch==2.6.0` | `torchvision==0.21.0` | `xformers==0.0.29.post3` | `cu124` | `/usr/local/cuda-12.4` |
+| 11.8 | `torch==2.6.0` | `torchvision==0.21.0` | `xformers==0.0.29.post3` | `cu118` | `/usr/local/cuda-11.8` |
 
 **`CUDA_HOME` prefix:** can be omitted if you have only single CUDA version installed in its default location.
 
+
 ## Obfuscations from the paper
+
+All the obfuscation scripts are in `scripts/obfuscation`.
 
 **blur** and **pixelization**
 - Classic image obfuscations - blurring with Gaussian kernel and pixelization.
@@ -57,3 +60,13 @@ Based on your CUDA version, you can pick the correct package version from the ta
 **Mask2Former**
 - Mask extraction using Mask2Former semantic/panoptic segmentation.
 - Use `Mask2Former/demo/demo.py`.
+
+
+## Localization
+
+There are two localization pipelines:
+
+- E5+1 pipeline: `scripts/localization/loc_pipeline_gen_rel_pose.py`
+- local triangulation pipeline: `scripts/localization/loc_pipeline_local_triang.py`
+
+Some utility scripts for data preparation and evaluation are present in `scripts/utils`
