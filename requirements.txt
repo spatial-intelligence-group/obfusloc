@@ -28,9 +28,11 @@ poselib==2.0.5
 
 # hloc - pinned to abb2520 — last commit containing EigenPlaces.
 hloc @ git+https://github.com/cvg/Hierarchical-Localization.git@abb252080282e31147db6291206ca102c43353f7
+
 # RoMa matcher
 romatch==0.1.2
-fused-local-corr==0.2.4
+# fused-local-corr has to be installed from source due to limited compatibility of pre-built versions with PyTorch
+fused-local-corr @ https://github.com/Parskatt/fused-local-corr.git
 
 # OpenCV
 opencv-python==4.13.0.92

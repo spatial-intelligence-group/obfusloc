@@ -1,3 +1,6 @@
 [submodule "third_party/DiffusionEdge"]
 	path = third_party/DiffusionEdge
 	url = https://github.com/GuHuangAI/DiffusionEdge.git
+[submodule "third_party/SuperGluePretrainedNetwork"]
+	path = third_party/SuperGluePretrainedNetwork
+	url = https://github.com/magicleap/SuperGluePretrainedNetwork.git

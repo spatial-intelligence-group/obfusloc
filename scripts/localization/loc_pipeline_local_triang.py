@@ -13,6 +13,7 @@ from pathlib import Path
 
 import numpy as np
 import poselib
+sys.path.append(str(Path(__file__).parent.parent.parent / "third_party"))  # for SuperGluePretrainedNetwork
 from hloc import extract_features, match_features, pairs_from_retrieval
 from hloc.utils.io import get_keypoints, get_matches
 from tqdm import tqdm
