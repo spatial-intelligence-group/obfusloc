@@ -14,7 +14,7 @@ CUDA_HOME=<cuda-path> PATH=<cuda-path>/bin:$PATH \
 Based on your CUDA version, you can pick the correct package version from the table:
 
 | CUDA | `<torch>` | `<torchvision>` | `<xformers>` | `<cu>` | `<cuda-path>` |
-|------|--------------------|-----------|-----------------|--------------|--------|---------------|
+|------|-----------|-----------------|--------------|--------|---------------|
 | 13.0 | `torch==2.9.0` | `torchvision==0.24.0` | `xformers==0.0.33` | `cu130` | `/usr/local/cuda-13.0` |
 | 12.4 | `torch==2.6.0` | `torchvision==0.21.0` | `xformers==0.0.29.post3` | `cu124` | `/usr/local/cuda-12.4` |
 | 11.8 | `torch==2.6.0` | `torchvision==0.21.0` | `xformers==0.0.29.post3` | `cu118` | `/usr/local/cuda-11.8` |
