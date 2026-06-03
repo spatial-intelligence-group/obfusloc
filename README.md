@@ -1,5 +1,9 @@
 # Privacy-Preserving Structureless Visual Localization via Image Obfuscation
 
+[![arXiv](https://img.shields.io/badge/arXiv-2604.12068-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2604.12068)
+
+Basic implementation of the pipeline described in the [paper](https://arxiv.org/abs/2604.12068) presented at Image Matching CVPR 2026 Workshop.
+
 ## Installation
 
 ```bash
@@ -70,3 +74,31 @@ There are two localization pipelines:
 - local triangulation pipeline: `scripts/localization/loc_pipeline_local_triang.py`
 
 Some utility scripts for data preparation and evaluation are present in `scripts/utils`
+
+## Acknowledgements
+
+We want to thank the authors and contributors of all the projects used in our work. Mainly, but not limited to:
+
+- [OpenCV](https://github.com/opencv/opencv)
+- [Metric3D](https://github.com/yvanyin/metric3d)
+- [DiffusionEdge](https://github.com/GuHuangAI/DiffusionEdge)
+- [SAM1](https://github.com/facebookresearch/segment-anything)
+- [SAM2](https://github.com/facebookresearch/sam2)
+- [Mask2Former](https://github.com/facebookresearch/Mask2Former)
+- [hloc](https://github.com/cvg/Hierarchical-Localization)
+- [RoMa](https://github.com/Parskatt/RoMa/)
+- [COLMAP](https://github.com/colmap/colmap)
+- [PoseLib](https://github.com/PoseLib/PoseLib)
+
+## Citation
+
+```
+@InProceedings{Panek_2026_ObfusLoc,
+  title={Privacy-Preserving Structureless Visual Localization via Image Obfuscation},
+  author={Panek, Vojtech and Beliansky, Patrik and Kukelova, Zuzana and Sattler, Torsten},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+  month     = {June},
+  year      = {2026},
+  pages={117--128},
+}
+```
