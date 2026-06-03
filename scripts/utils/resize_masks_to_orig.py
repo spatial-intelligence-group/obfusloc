@@ -27,7 +27,7 @@ def main():
     parser.add_argument(
         "--mask_postfix",
         type=str,
-        default="_masks",
+        default="",
         help="Postfix for the mask files",
     )
     parser.add_argument(
@@ -57,7 +57,10 @@ def main():
 
     print("Resizing masks to original sizes...")
     for input_path, output_path in tqdm(zip(input_paths, output_paths), total=len(input_paths)):
-        basename = os.path.splitext(os.path.basename(input_path))[0][:-len(args.mask_postfix)]
+        if len(args.mask_postfix) > 0:
+            basename = os.path.splitext(os.path.basename(input_path))[0][:-len(args.mask_postfix)]
+        else:
+            basename = os.path.splitext(os.path.basename(input_path))[0]
         orig_size = orig_sizes.get(basename)
 
         if orig_size is None:
