@@ -1,0 +1,5 @@
+# uv override: force iopath>=0.1.10 regardless of what detectron2 declares.
+# PyPI detectron2==0.6 (2021) pins iopath>=0.1.7,<0.1.10, but sam2==1.1.0
+# requires iopath>=0.1.10. The upper bound in detectron2's metadata is
+# conservative; detectron2 is runtime-compatible with iopath>=0.1.10.
+iopath>=0.1.10

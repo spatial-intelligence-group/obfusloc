@@ -1,0 +1,3 @@
+[submodule "third_party/DiffusionEdge"]
+	path = third_party/DiffusionEdge
+	url = https://github.com/GuHuangAI/DiffusionEdge.git
