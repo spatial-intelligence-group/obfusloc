@@ -30,12 +30,36 @@ Based on your CUDA version, you can pick the correct package version from the ta
 
 ## Obfuscations from the paper
 
-|   |   |   |   |   |
-|---|---|---|---|---|
-| ![original image](assets/db_1516_orig.jpg) | ![blur](assets/db_1516_blur_41.jpg) | ![pixelization](assets/db_1516_pixelized_10.jpg) | ![easy-anon](assets/db_1516_easy_anon_single.jpg) | ![Mask2Former](assets/db_1516_mask2former_semantic.jpg) |
-| original | blur | pixelization | easy-anon | Mask2Former |
-| ![Canny](assets/db_1516_canny.png) | ![DiffusionEdge](assets/db_1516_diffedge.png) | ![Metric3D --> Canny](assets/db_1516_metric3d_edges.png) | ![SAM borders](assets/db_1516_sam1_borders.png) | ![SAM masks](assets/db_1516_sam1_masks.jpg) |
-| Canny | DiffusionEdge | Metric3D --> Canny | SAM borders | SAM masks |
+<table style="table-layout: fixed; width: 100%;">
+  <tr>
+    <td width="20%"><img src="assets/db_1516_orig.jpg" width="100%"/></td>
+    <td width="20%"><img src="assets/db_1516_blur_41.jpg" width="100%"/></td>
+    <td width="20%"><img src="assets/db_1516_pixelized_10.jpg" width="100%"/></td>
+    <td width="20%"><img src="assets/db_1516_easy_anon_single.jpg" width="100%"/></td>
+    <td width="20%"><img src="assets/db_1516_mask2former_semantic.jpg" width="100%"/></td>
+  </tr>
+  <tr>
+    <td align="center">original</td>
+    <td align="center">blur</td>
+    <td align="center">pixelization</td>
+    <td align="center">easy-anon</td>
+    <td align="center">Mask2Former</td>
+  </tr>
+  <tr>
+    <td width="20%"><img src="assets/db_1516_canny.png" width="100%"/></td>
+    <td width="20%"><img src="assets/db_1516_diffedge.png" width="100%"/></td>
+    <td width="20%"><img src="assets/db_1516_metric3d_edges.png" width="100%"/></td>
+    <td width="20%"><img src="assets/db_1516_sam1_borders.png" width="100%"/></td>
+    <td width="20%"><img src="assets/db_1516_sam1_masks.jpg" width="100%"/></td>
+  </tr>
+  <tr>
+    <td align="center">Canny</td>
+    <td align="center">DiffusionEdge</td>
+    <td align="center">Metric3D --> Canny</td>
+    <td align="center">SAM borders</td>
+    <td align="center">SAM masks</td>
+  </tr>
+</table>
 
 All the obfuscation scripts are in `scripts/obfuscation`.
 
